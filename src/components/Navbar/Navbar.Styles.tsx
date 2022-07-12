@@ -27,6 +27,13 @@ export const NavItems = styled.ul`
   border-radius: 5px;
   list-style: none;
   color: black;
+
+  cursor: pointer;
+
+  transition: background 1s;
+  :hover {
+    background: ${pallete.backgroundColor};
+  }
 `;
 export const NavItem = styled.li`
   display: flex;

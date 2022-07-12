@@ -17,7 +17,7 @@ export const Cards = styled.div`
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-content: center;
-
+  margin: 1em 0;
   gap: 1rem;
 `;
 export const Card = styled.div`
@@ -31,7 +31,9 @@ export const Card = styled.div`
 
   overflow: hidden;
 `;
-export const CardHeader = styled.div``;
+export const CardHeader = styled.div`
+  height: 7rem;
+`;
 export const CardImage = styled.img<Props>`
   margin: ${(props) => (props.secondary ? "0 0.5rem" : "")};
   padding: ${(props) => (props.secondary ? "" : "0.5rem 0")};
@@ -39,6 +41,7 @@ export const CardImage = styled.img<Props>`
 `;
 export const CardBody = styled.div`
   padding: 0 1em;
+  height: 11rem;
 `;
 export const CardTitle = styled.h3`
   font-weight: normal;
@@ -57,6 +60,7 @@ export const CardDescription = styled.p`
 export const CardBodyDiv = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
 `;
 
 export const CardFooter = styled.div`
