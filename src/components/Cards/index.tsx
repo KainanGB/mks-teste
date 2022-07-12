@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-import watch from "../../assets/apple-watch.png";
 import bag from "../../assets/bag.svg";
 
 import * as S from "./Cards.Styles";
 
-interface ProductsProps {
+interface ProductsTypes {
   id: number;
   photo: string;
   name: string;
@@ -15,7 +14,7 @@ interface ProductsProps {
 }
 
 export const Cards = () => {
-  const [products, setProducts] = useState<ProductsProps[]>([]);
+  const [products, setProducts] = useState<ProductsTypes[]>([]);
 
   const fetchProducts = async () => {
     const res = await axios.get(

@@ -1,8 +1,15 @@
 import styled from "styled-components";
 import * as pallete from "../../global/variables";
 
-type Props = {
+type ImgProps = {
   src: string;
+};
+
+type ToggleProps = {
+  toggle: boolean;
+};
+type Instances = {
+  secondary?: boolean;
 };
 
 export const Navbar = styled.nav`
@@ -40,6 +47,6 @@ export const NavItem = styled.li`
   align-items: center;
 `;
 
-export const Image = styled.img<Props>`
+export const Image = styled.img<ImgProps>`
   margin-right: 0.5em;
 `;
